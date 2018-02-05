@@ -2,16 +2,15 @@ import java.util.Scanner;
 
 public class DaysInMonth {
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Ban muon tinh so ngay cua thang may? ");
+        System.out.print("Which month that you want to count days? ");
         int month = scanner.nextInt();
 
         String daysInMonth;
         switch (month) {
             case 2:
-                daysInMonth = "28 hoac 29";
+                daysInMonth = "28 or 29";
                 break;
             case 1:
             case 3:
@@ -32,8 +31,8 @@ public class DaysInMonth {
                 daysInMonth = "";
         }
 
-        if (daysInMonth != "") System.out.printf("Thang %d co %s ngay!", month, daysInMonth);
-        else System.out.print("Thang nhap vao khong dung!");
+        if (daysInMonth != "") System.out.printf("The month '%d' has %s days!", month, daysInMonth);
+        else System.out.print("Invalid input!");
 
     }
 }
