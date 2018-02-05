@@ -8,10 +8,10 @@ public class DaysInMonth {
         System.out.print("Ban muon tinh so ngay cua thang may? ");
         int month = scanner.nextInt();
 
-        String counting;
+        String daysInMonth;
         switch (month) {
             case 2:
-                counting = "28 hoac 29";
+                daysInMonth = "28 hoac 29";
                 break;
             case 1:
             case 3:
@@ -20,19 +20,19 @@ public class DaysInMonth {
             case 8:
             case 10:
             case 12:
-                counting = "31";
+                daysInMonth = "31";
                 break;
             case 4:
             case 6:
             case 9:
             case 11:
-                counting = "30";
+                daysInMonth = "30";
                 break;
             default:
-                counting = "";
+                daysInMonth = "";
         }
 
-        if (counting != "") System.out.printf("Thang %d co %s ngay!", month, counting);
+        if (daysInMonth != "") System.out.printf("Thang %d co %s ngay!", month, daysInMonth);
         else System.out.print("Thang nhap vao khong dung!");
 
     }
